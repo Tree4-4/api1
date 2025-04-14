@@ -2,7 +2,7 @@ const con = require('../../config/dbconfig')
 
 const heroDao = {
     table: 'hero',
-    ...require('../daoCommon'),
+    ...require('../../daos/api/daoCommon'),
     findHeros: (res, table)=> {
         con.query
         `SELECT h.hero_id, h.hero_name, h.first_name,

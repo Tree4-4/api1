@@ -29,8 +29,11 @@ server.use(express.urlencoded({ extended: true }))
 // localhost:3000/api
 server.get('/api', (req, res)=> {
     res.json({
-        'All Heros': `http://localhost:${PORT}/api/hero`
-        'All Franchises': `http://localhost${}`
+        'All Heros': `http://localhost:3000${PORT}/api/hero`,
+        'All Franchises': `http://localhost:3000${PORT}/api/franchise`,
+        'All Teams' : `http://localhost:3000${PORT}/api/team`,
+        'All Species' : `http://localHost:${PORT}/api/speicies`,
+        'All Powers' : `http://localHost:${PORT}/api/power`,
     })
 })
 
