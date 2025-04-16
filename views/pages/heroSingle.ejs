@@ -1,0 +1,25 @@
+<%- include('../partials/header') %>
+
+
+<main class="main" id="heroSingleMain">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h2>Powers</h2>
+                <ul class="list-group list-group-flush" id="heroPowersList">
+                    <% heroPowers.forEach(heroPower => {
+                        %>
+                        <li class="list-group-item heropower-list-item">
+                            <a href="#" class="heropower-link">
+                                <%= heroPower.power %>
+                            </a>
+                        </li>
+                    })
+                </ul>
+            </div>
+            <div class="col-md-7">
+                <img src="https://via.placeholder.com/50x50"alt="placeholder img" class="img-fluid image" />
+            </div>
+        </div>
+    </div>
+</main>
