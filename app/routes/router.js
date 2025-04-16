@@ -12,9 +12,7 @@ router.use(express.static('public'))
 // router.use('/api/hero', require('./api/heroRoutes'))
 // router.use('/api/franchise', require('./api/franchsieRoutes'))
 
-endpoints.forEach(endpoint => {
-    router.use(`api/${endpoint}`, require(`./api/${endpoint}Routes`))
-})
+router.use(express.static('public'))
 
 const endpoints = [ 'hero', 'francise', 'team', 'power', 'speices']
 
