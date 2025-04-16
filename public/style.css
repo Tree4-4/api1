@@ -3,3 +3,34 @@
 
     f1"Special Gothic Expanded One", sans-sreif"
 */
+
+* {box-sizing: border-box;}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffff;
+}
+
+#header {
+    background-color: rgb(61, 132, 190);
+    border-radius: 5%;
+    box-shadow: none;
+    
+}
+
+#footer {
+    width: 30%;
+    height: 20px;
+    margin: auto;
+}
+
+.top-nav {
+    color: blue;
+    margin-bottom: 15px;
+    width: 10px;
+}
+
+
+
